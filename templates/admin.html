@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h2>Admin Panel</h2>
+<h4>Users</h4>
+<ul class="list-group mb-3">
+{% for u in users %}
+  <li class="list-group-item">{{ u.username }} - {{ u.email }} - {{ u.role }}</li>
+{% endfor %}
+</ul>
+<h4>Jobs</h4>
+<ul class="list-group">
+{% for job in jobs %}
+  <li class="list-group-item">{{ job.title }} - {{ job.company }} - {{ job.location }}</li>
+{% endfor %}
+</ul>
+{% endblock %}

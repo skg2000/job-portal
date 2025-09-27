@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h2>Post Job</h2>
+<form method="POST">
+  {{ form.hidden_tag() }}
+  <div class="mb-3">{{ form.title.label }} {{ form.title(class="form-control") }}</div>
+  <div class="mb-3">{{ form.company.label }} {{ form.company(class="form-control") }}</div>
+  <div class="mb-3">{{ form.location.label }} {{ form.location(class="form-control") }}</div>
+  <div class="mb-3">{{ form.category.label }} {{ form.category(class="form-control") }}</div>
+  <div class="mb-3">{{ form.salary.label }} {{ form.salary(class="form-control") }}</div>
+  <div class="mb-3">{{ form.description.label }} {{ form.description(class="form-control", rows=6) }}</div>
+  <button class="btn btn-primary">{{ form.submit.label }}</button>
+</form>
+{% endblock %}
