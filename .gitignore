@@ -1,0 +1,68 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# SQLite database files
+*.db
+*.sqlite3
+
+# Flask instance folder
+instance/
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Python packaging
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+*.manifest
+*.spec
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Coverage reports
+htmlcov/
+.coverage
+*.cover
+*.py,cover
+.cache
+nosetests.xml
+coverage.xml
+*.coveragerc
+
+# Pytest cache
+.pytest_cache/
+
+# Distribution / packaging
+.Python
+develop-eggs/
+.eggs/
+lib/
+lib64/
+__pycache__/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ENV files
+.env
